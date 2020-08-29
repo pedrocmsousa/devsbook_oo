@@ -14,3 +14,5 @@
 
 - Criação da pagina de cadastro
 - Criação e configuração de cadastro no Banco de Dados.
+- Criação de funcionalidade de Logout
+- Correção de bug no login
