@@ -32,7 +32,7 @@ class UserDaoMysql implements UserDAO {
             if($sql->rowCount() > 0) {
                 $data = $sql->fetch(PDO::FETCH_ASSOC);
                 $this->generateUser($data);
-                return $user;
+                return $data;
             }
         }
     }
@@ -47,7 +47,7 @@ class UserDaoMysql implements UserDAO {
             if($sql->rowCount() > 0) {
                 $data = $sql->fetch(PDO::FETCH_ASSOC);
                 $this->generateUser($data);
-                return $user;
+                return $data;
             }
         }
     }
@@ -78,5 +78,23 @@ class UserDaoMysql implements UserDAO {
         $sql->execute();
 
         return true;
+    }
+
+    public function insert(User $u) {
+        $sql = "INSERT INTO users (
+            email, password, name, birthdate, token
+        ) VALUES (
+            :email, :password, :name, :birthdate, :token
+        )";
+        $sql = $this->pdo->prepare($sql);
+        $sql->bindValue(':email', $u->email);
+        $sql->bindValue(':password', $u->password);
+        $sql->bindValue(':name', $u->name);
+        $sql->bindValue(':birthdate', $u->birthdate);
+        $sql->bindValue(':token', $u->token);
+        $sql->execute();
+
+        return true;
+
     }
 }
