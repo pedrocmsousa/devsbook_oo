@@ -16,6 +16,11 @@
 - Criação e configuração de cadastro no Banco de Dados.
 - Criação de funcionalidade de Logout
 - Correção de bug no login
+
+### 10:32
+
 - Refaturando o Auth
 - Estruturando Template e dividindo o codigo em partes.
 - Criação de todos os arquivos necessários para o menu.
+- Resolvido problema de clique. Colocado o template a funcionar em todas as paginas adicionais. 
+- Funcionando os menus activos. 
