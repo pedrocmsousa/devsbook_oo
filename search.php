@@ -9,10 +9,8 @@ require 'partials/header.php';
 require 'partials/menu.php';
 ?>
 <section class="feed mt-10">
-    ...
+    
 </section>
-
-
 <?php
 require 'partials/footer.php';
 ?>

@@ -24,3 +24,11 @@
 - Criação de todos os arquivos necessários para o menu.
 - Resolvido problema de clique. Colocado o template a funcionar em todas as paginas adicionais. 
 - Funcionando os menus activos. 
+
+### 12:52
+
+- Inicio da estruturação da pagina Home.
+- Criação da parte de patrocionios com os links todos funcionando.
+- Criação do arquivo para inserção de novo anuncio nos partials.
+- Feed Editor inserindo posts no Banco de dados.
+- Dados para exibição de posts no feed salvos em um Objeto.

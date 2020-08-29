@@ -391,6 +391,11 @@ header .head-side {
     margin:0;
 }
 
+.create a {
+    text-decoration: none;
+    color: #000;
+}
+
 @media (max-width: 992px) {
     header .head-side-right {
         display:none !important;

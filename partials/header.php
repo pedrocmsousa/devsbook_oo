@@ -1,5 +1,5 @@
 <?php
-$firtsName = current(explode(' ', $userInfo->name));
+$firstName = current(explode(' ', $userInfo->name));
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,10 +25,10 @@ $firtsName = current(explode(' ', $userInfo->name));
                     </div>
                 </div>
                 <div class="head-side-right">
-                    <a href="<?= $base ?>/profile.php" class="user-area">
-                        <div class="user-area-text">Olá, <?= $firtsName;?></div>
+                    <a href="<?= $base; ?>/profile.php" class="user-area">
+                        <div class="user-area-text">Olá, <?= $firstName;?>?</div>
                         <div class="user-area-icon">
-                            <img src="<?= $base ?>/media/avatars/<?= $userInfo->avatar;?>" />
+                            <img src="<?= $base; ?>/media/avatars/<?= $userInfo->avatar;?>" />
                         </div>
                     </a>
                     <a href="<?= $base ?>/logout.php" class="user-logout">
