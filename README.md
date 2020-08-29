@@ -32,3 +32,8 @@
 - Criação do arquivo para inserção de novo anuncio nos partials.
 - Feed Editor inserindo posts no Banco de dados.
 - Dados para exibição de posts no feed salvos em um Objeto.
+- Pagina Home totalmente configurada dinamicamente para mostrar os dados.
+- Pagina de Perfil iniciada. 
+- Listando seguidores/seguindo.
+- Mostrando de forma dinamica essa listagem.
+- Adicionada a opção de postar diretamente no perfil do usuário.
