@@ -48,3 +48,9 @@
 - Pagina de fotos configurada dinamicamente.
 - Funcionalidade de pesquisa funcionando.
 - Criação de partial da lista de amigos para uso em um só local
+- Começado a criar a pagina de configurações;
+
+### 13:00
+
+- Pagina de configurações efetuando a troca de informações
+- Pagina de configurações trocando Avatar e Cover.
