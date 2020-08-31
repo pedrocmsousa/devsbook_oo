@@ -37,11 +37,7 @@ $user->ageYears = $dateFrom->diff($dateTo)->y;
 // Pegar FEED do Usuario
 $feed = $postDao->getUserFeed($id);
 
-
 // Verificar se eu SIGO este usuario
-
-// 
-// $feed = $postDao->getHomeFeed($userInfo->id);
 
 require 'partials/header.php';
 require 'partials/menu.php';
