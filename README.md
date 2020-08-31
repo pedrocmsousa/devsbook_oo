@@ -54,3 +54,4 @@
 
 - Pagina de configurações efetuando a troca de informações
 - Pagina de configurações trocando Avatar e Cover.
+- Função Like funcionando.
