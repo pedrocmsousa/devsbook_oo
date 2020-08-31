@@ -45,3 +45,4 @@
 - Feito a secção de fotos do perfil.
 - Corrigido bug da pagina Home.
 - Pagina de amigos configurada dinamicamente.
+- Pagina de fotos configurada dinamicamente.
