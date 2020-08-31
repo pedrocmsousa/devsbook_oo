@@ -60,6 +60,8 @@ class UserDaoMysql implements UserDAO {
                 return $user;
             }
         }
+
+        return false;
     }
 
     public function findByEmail($email) {
@@ -76,6 +78,8 @@ class UserDaoMysql implements UserDAO {
                 return $user;
             }
         }
+
+        return false;
     }
 
     public function findById($id, $full = false) {
@@ -92,6 +96,30 @@ class UserDaoMysql implements UserDAO {
                 return $user;
             }
         }
+
+        return false;
+    }
+
+    public function findByName($name) {
+        $array = [];
+
+        if(!empty($name)) {
+            $sql = "SELECT * FROM users WHERE name LIKE :name";
+            $sql = $this->pdo->prepare($sql);
+            $sql->bindValue(':name', '%'.$name.'%');
+            $sql->execute();
+
+
+            if($sql->rowCount() > 0) {
+                $data = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+                foreach($data as $item) {
+                    $array[] = $this->generateUser($item);
+                }
+            }
+        }
+
+        return $array;
     }
 
     public function update(User $u) {

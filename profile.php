@@ -109,16 +109,7 @@ require 'partials/menu.php';
                 </div>
                 <div class="box-body friend-list">
                     <?php foreach($user->following as $item): ?>
-                        <div class="friend-icon">
-                            <a href="<?=$base;?>/profile.php?id=<?=$item->id;?>">
-                                <div class="friend-icon-avatar">
-                                    <img src="<?=$base;?>/media/avatars/<?=$item->avatar;?>" />
-                                </div>
-                                <div class="friend-icon-name">
-                                    <?=$item->name;?>
-                                </div>
-                            </a>
-                        </div>
+                        <?php require 'partials/friend-list.php';?>
                     <?php endforeach; ?>
                 </div>
             </div>

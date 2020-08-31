@@ -88,32 +88,14 @@ require 'partials/menu.php';
                         <div class="tab-body" data-item="followers">
                             <div class="full-friend-list">
                                 <?php foreach($user->followers as $item): ?>
-                                    <div class="friend-icon">
-                                        <a href="<?=$base;?>/profile.php?id=<?=$item->id;?>">
-                                            <div class="friend-icon-avatar">
-                                                <img src="<?=$base;?>/media/avatars/<?=$item->avatar;?>" />
-                                            </div>
-                                            <div class="friend-icon-name">
-                                                <?=$item->name;?>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <?php require 'partials/friend-list.php';?>
                                 <?php endforeach; ?>   
                             </div>
                         </div>
                         <div class="tab-body" data-item="following">     
                             <div class="full-friend-list">
                                 <?php foreach($user->following as $item): ?>
-                                    <div class="friend-icon">
-                                        <a href="<?=$base;?>/profile.php?id=<?=$item->id;?>">
-                                            <div class="friend-icon-avatar">
-                                                <img src="<?=$base;?>/media/avatars/<?=$item->avatar;?>" />
-                                            </div>
-                                            <div class="friend-icon-name">
-                                                <?=$item->name;?>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <?php require 'partials/friend-list.php';?>
                                 <?php endforeach; ?>
                             </div>
                         </div>

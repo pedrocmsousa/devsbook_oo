@@ -46,3 +46,5 @@
 - Corrigido bug da pagina Home.
 - Pagina de amigos configurada dinamicamente.
 - Pagina de fotos configurada dinamicamente.
+- Funcionalidade de pesquisa funcionando.
+- Criação de partial da lista de amigos para uso em um só local
