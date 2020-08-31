@@ -37,3 +37,10 @@
 - Listando seguidores/seguindo.
 - Mostrando de forma dinamica essa listagem.
 - Adicionada a opção de postar diretamente no perfil do usuário.
+
+## 31/08/2020
+
+### 09:10
+
+- Feito a secção de fotos do perfil.
+- Corrigido bug da pagina Home.

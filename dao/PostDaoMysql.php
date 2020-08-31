@@ -68,6 +68,27 @@ class PostDaoMysql implements PostDAO {
             $array = $this->_postListToObject($data, $id_user);
         }
 
+        return $array;
+    }
+
+    public function getPhotosFrom($id_user) {
+        $array = [];
+        $type = 'photo';
+
+        $sql = "SELECT * FROM posts 
+                WHERE id_user = :id_user AND type = :type
+                ORDER BY created_at DESC";
+        $sql = $this->pdo->prepare($sql);
+        $sql->bindValue('type', $type);
+        $sql->bindValue('id_user', $id_user);
+        $sql->execute();
+
+        if($sql->rowCount() > 0) {
+            $data = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+            // 1. Transformar o resultado em objetos
+            $array = $this->_postListToObject($data, $id_user);
+        }
 
         return $array;
     }

@@ -355,7 +355,7 @@ header .head-side {
     margin-right:0;
 }
 .user-photo-item img {
-    max-width: 100%;
+    width: 25%;
 }
 
 .tabs {
