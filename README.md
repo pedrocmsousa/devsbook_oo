@@ -55,3 +55,11 @@
 - Pagina de configurações efetuando a troca de informações
 - Pagina de configurações trocando Avatar e Cover.
 - Função Like funcionando.
+- Inicio do processo de comentários via Ajax efetuado. 
+
+## 02/09/2020
+
+### 00:33
+
+- Comentarios inseridos via ajax e já salvando no banco.
+- Detecção de bug de codigo que estava causando quebra no site.

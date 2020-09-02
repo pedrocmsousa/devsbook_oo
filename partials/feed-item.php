@@ -35,34 +35,25 @@ switch($item->type) {
             <div class="msg-btn"><?= count($item->comments)?></div>
         </div>
         <div class="feed-item-comments">
-
-            <!-- <div class="fic-item row m-height-10 m-width-20">
-                <div class="fic-item-photo">
-                    <a href=""><img src="media/avatars/avatar.jpg" /></a>
-                </div>
-                <div class="fic-item-info">
-                    <a href="">Bonieky Lacerda</a>
-                    Comentando no meu próprio post
-                </div>
+            <div class="feed-item-comments-area">
+                <?php foreach($item->comments as $comment): ?>
+                    <div class="fic-item row m-height-10 m-width-20">
+                        <div class="fic-item-photo">
+                            <a href="<?=$base;?>/profile.php?id=<?=$comment->id_user;?>"><img src="<?=$base;?>/media/avatars/<?=$comment->user->avatar; ?>" /></a>
+                        </div>
+                        <div class="fic-item-info">
+                            <a href="<?=$base;?>/profile.php?id=<?=$comment->id_user;?>"><?=$comment->user->name; ?></a>
+                            <?=$comment->body; ?>
+                        </div>
+                    </div>  
+                <?php endforeach; ?>
             </div>
-
-            <div class="fic-item row m-height-10 m-width-20">
-                <div class="fic-item-photo">
-                    <a href=""><img src="media/avatars/avatar.jpg" /></a>
-                </div>
-                <div class="fic-item-info">
-                    <a href="">Bonieky Lacerda</a>
-                    Muito legal, parabéns!
-                </div>
-            </div> -->
-
             <div class="fic-answer row m-height-10 m-width-20">
                 <div class="fic-item-photo">
-                    <a href="<?=$base;?>/profile.php"><img src="<?= $base; ?>/media/avatars/<?=$userInfo->avatar;?>" /></a>
+                    <a href="<?=$base;?>/profile.php?id=<?=$userInfo->id;?>"><img src="<?= $base; ?>/media/avatars/<?=$userInfo->avatar;?>" /></a>
                 </div>
                 <input type="text" class="fic-item-field" placeholder="Escreva um comentário" />
             </div>
-
         </div>
     </div>
 </div>
