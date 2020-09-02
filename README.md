@@ -64,3 +64,11 @@
 - Comentarios inseridos via ajax e já salvando no banco.
 - Detecção de bug de codigo que estava causando quebra no site.
 - Processo de Follow/Unfllow funcionando perfeitamente.
+
+### 08:50
+
+- Processo de upload de fotos.
+- Feito formulário para envio de arquivos. 
+- Preparado o processo de javascript para envio de arquivos via AJAX.
+- Envio de arquivos salvando no banco ok.
+- Corrigido bug no Modal.

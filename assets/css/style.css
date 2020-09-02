@@ -207,7 +207,6 @@ header .head-side {
     width:250px;
 }
 
-
 .feed-new-editor {
     align-items: center;
 }
@@ -232,13 +231,20 @@ header .head-side {
     display: none;
     color:#333;
 }
-.feed-new-send {
+.feed-new-send,
+.feed-new-photo {
     cursor: pointer;
     margin-right:5px;
 }
-.feed-new-send img {
+.feed-new-send img,
+.feed-new-photo img {
     width:25px;
     height:25px;
+}
+.feed-new-file {
+    position: absolute;
+    left: -500px;
+    top: -500px;
 }
 
 .banners .box-body {
@@ -353,14 +359,20 @@ header .head-side {
 
 .user-photo-item {
     margin-right:10px;
+    max-width: 25%;
 }
+
 .user-photo-item:last-child {
     margin-right:0;
 }
+
 .user-photo-item img {
-    width: 25%;
+    max-width: 100%;
 }
 
+.full-user-photos .user-photo-item {
+    max-width: 100%;
+}
 .tabs {
     border-bottom: 1px solid #c9cacc;
     display: flex;
