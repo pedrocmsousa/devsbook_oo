@@ -72,3 +72,9 @@
 - Preparado o processo de javascript para envio de arquivos via AJAX.
 - Envio de arquivos salvando no banco ok.
 - Corrigido bug no Modal.
+
+### 13:00 
+
+- Detalhes do feed.
+- Função de excluir post. 
+- Detectado e corrigido bug de minuto mostrando incorretamente.
