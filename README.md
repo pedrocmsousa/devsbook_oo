@@ -63,3 +63,4 @@
 
 - Comentarios inseridos via ajax e já salvando no banco.
 - Detecção de bug de codigo que estava causando quebra no site.
+- Processo de Follow/Unfllow funcionando perfeitamente.
