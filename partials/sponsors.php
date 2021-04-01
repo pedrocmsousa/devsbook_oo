@@ -5,8 +5,12 @@
         </div>
     </div>
     <div class="box-body">
-        <a href="https://b7web.com.br/fullstack/" target="_blank"><img src="<?= $base; ?>/media/sponsors/fullstack.jpg" /></a>
-        <a href="https://alunos.b7web.com.br/curso/javascript" target="_blank"><img src="<?= $base; ?>/media/sponsors/javascript.jpg" /></a>
+        <a href="">
+            <img src="https://alunos.b7web.com.br/media/courses/php.jpg" />
+        </a>
+        <a href="">
+            <img src="https://alunos.b7web.com.br/media/courses/laravel.jpg" />
+        </a>
     </div>
 </div>
 <div class="box">
