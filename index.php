@@ -7,8 +7,14 @@ $auth = new Auth($pdo, $base);
 $userInfo = $auth->checkToken();
 $activeMenu = 'home';
 
+// Pegar informações de paginação
+$page = intval(filter_input(INPUT_GET, 'p'));
+if($page < 1) {
+    $page = 1;
+}
+
 $postDao = new PostDaoMysql($pdo);
-$info = $postDao->getHomeFeed($userInfo->id);
+$info = $postDao->getHomeFeed($userInfo->id, $page);
 $feed = $info['feed'];
 $pages = $info['pages'];
 $currentPage = $info['currentPage'];
